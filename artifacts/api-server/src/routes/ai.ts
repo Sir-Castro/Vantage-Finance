@@ -47,7 +47,7 @@ router.post("/market-summary", async (req, res) => {
       ? `Total Market Cap: $${(marketData.globalData.totalMarketCap / 1e9).toFixed(0)}B, BTC Dominance: ${marketData.globalData.btcDominance.toFixed(1)}%, 24h Market Change: ${marketData.globalData.marketCapChange24h.toFixed(2)}%`
       : "";
 
-    const prompt = `You are a professional crypto market analyst. Analyze the following real-time market data and provide a concise, insightful market summary.
+    const prompt = `You are a professional market analyst for Vantage Finance. Analyze the following real-time market data and provide a concise, insightful market summary.
 
 Market Data:
 ${coinsSummary}
